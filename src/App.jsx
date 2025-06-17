@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Body from './components/Body'
 
 
 
@@ -7,9 +8,7 @@ function App() {
 
   return (
     
-      <div className='text-5xl font-bold text-green-500'>
-        namaste react lets build netflix gpt
-       </div>
+      <Body/>
 
   )
 }
