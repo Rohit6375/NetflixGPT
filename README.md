@@ -28,6 +28,19 @@ If you are developing a production application, we recommend using TypeScript wi
 - Implemented sign out
 - updated profile api call
 - Fetch Movies from  
+- BugFix: sign up user displayName and profile picture update
+- BugFix: if the user is not logged in redirect /browse to login page and vice-versa
+- unsubscribed to the onauthstatechange callback
+- Register TMDB API & create an app & get access token
+- Get Data from TMDB now plyaing movie list api
+- Custom Hook for nowplayingmovies
+- create movie slice
+- update store with movies data
+- planning for main container and secondary container
+- fetch data for trailer video
+- update store with trailer video data
+- Embeded youtube video and made it autoplay and mute
+- tailwind classes to make main container look awesome
 
 # FEATURES
 - Login/Sign up
