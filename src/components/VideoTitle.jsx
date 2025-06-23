@@ -9,8 +9,8 @@ const VideoTitle = ({title,overview}) => {
         <h1 className='text-6xl font-bold'>{title}</h1>
         <p className='py-6 text-lg w-1/3'>{overview}</p>
         <div className='flex'>
-            <button className='bg-white/95 text-black p-3 gap-2 px-10 text-xl  hover:bg-white/80  font-bold rounded-lg flex items-center '><FaPlay />Play</button>
-            <button className="bg-gray-500/70 hover:bg-gray-500/30 text-white font-bold gap-2 p-3 px-10 text-xl rounded-lg mx-3 flex items-center">
+            <button className='bg-white/95 text-black p-3 gap-2 px-10 text-xl hover:cursor-pointer  hover:bg-white/80  font-bold rounded-lg flex items-center '><FaPlay />Play</button>
+            <button className="bg-gray-500/70 hover:bg-gray-500/30 text-white hover:cursor-pointer font-bold gap-2 p-3 px-10 text-xl rounded-lg mx-3 flex items-center">
   <IoIosInformationCircleOutline />
   More Info
 </button>

@@ -8,8 +8,8 @@ const MainContainer = () => {
     if(!movies) return ; // same as(movies===null)
 
     // console.log(movies); 
-    const mainMoive=movies[3];
-    console.log(mainMoive);
+    const mainMoive=movies[0];
+    // console.log(mainMoive);
     const {original_title,overview,id}=mainMoive;
   return (
     <div>
@@ -19,4 +19,4 @@ const MainContainer = () => {
   )
 }
 
-export default MainContainer
+export default MainContainer;
