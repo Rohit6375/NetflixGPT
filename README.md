@@ -47,6 +47,11 @@ If you are developing a production application, we recommend using TypeScript wi
 - TMDB Image cdn url
 - made browse page amazing with tailwind css
 - custom hooks for movie list categories
+- GPT SEARCH FEATURE
+- GPT Search Page
+- GPT Search Bar
+- (Bonus) Multi-language Feature in our app
+- 
 
 # FEATURES
 - Login/Sign up
