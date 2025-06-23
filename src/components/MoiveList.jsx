@@ -2,7 +2,7 @@ import React from 'react'
 import MovieCard from './MovieCard';
 
 const MoiveList = ({title,movies}) => {
-  console.log(movies);
+  // console.log(movies);
  if(!Array.isArray(movies) || movies.length===0){
   return <div>no movies present</div>;
  }
