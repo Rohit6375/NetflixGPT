@@ -12,7 +12,7 @@ const MainContainer = () => {
     // console.log(mainMoive);
     const {original_title,overview,id}=mainMoive;
   return (
-    <div>
+    <div className='md:pt-0 pt-[30%] bg-black'>
         <VideoTitle title={original_title} overview={overview}/>
         <VideoBackground movieId={id}/>
     </div>

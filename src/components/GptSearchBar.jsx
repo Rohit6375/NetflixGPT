@@ -38,8 +38,8 @@ const GptSearchBar = () => {
 
   return loading ? <Shimmer /> :(
   <div>
-    <div className="pt-[10%] flex justify-center">
-      <form className="w-1/2 bg-black/80 grid grid-cols-12 rounded-xl" onSubmit={(e) => e.preventDefault()}>
+    <div className="pt-[40%] md:p-[10%] flex justify-center">
+      <form className="md:w-1/2 w-full bg-black/80 grid grid-cols-12 rounded-xl" onSubmit={(e) => e.preventDefault()}>
         <input ref={searchText} type="text" className="p-4 m-4 bg-white/95 col-span-9" placeholder={lang[langKey].gptSearchPlaceholder} />
         <button
           className={`py-2 px-4 font-bold hover:cursor-pointer text-white rounded-lg col-span-3 m-4 ${

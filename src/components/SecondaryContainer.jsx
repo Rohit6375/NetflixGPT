@@ -16,7 +16,7 @@ const SecondaryContainer = () => {
 
   return (
     <div className="bg-black">
-      <div className="-mt-[230px] pl-10 relative z-20">
+      <div className=" mt-0  md:-mt-54    md:pl-10 relative z-20">
         <MoiveList title={"Now Playing"} movies={movies.nowPlayingMovies} onMovieClick={handleMovieClick} />
         <MoiveList title={"Trending"} movies={movies.TrendingMovies} onMovieClick={handleMovieClick} />
         <MoiveList title={"Popular"} movies={movies.PopularMovies} onMovieClick={handleMovieClick} />

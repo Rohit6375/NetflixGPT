@@ -87,16 +87,16 @@ const {uid,email,displayName,photoURL}=auth.currentUser;
     <div>
       <Header />
       <div className="absolute opacity-100">
-        <img 
+        <img className="h-screen object-cover md:w-screen"
         src={BG_URL}
           alt="bg-img"
         />
       </div>
       <form
         onSubmit={(e)=>e.preventDefault()}
-        className="w-3/12 absolute p-12 bg-black my-30 mx-auto right-0 left-0 text-white opacity-85 rounded-lg "
+        className="w-full md:w-3/12 absolute p-12 bg-black my-30 mx-auto right-0 left-0 text-white opacity-85 rounded-lg "
       >
-        <h1 className="font-bold text-4xl py-4">
+        <h1 className="font-bold text-2xl md:text-4xl py-4">
           {isSignForm ? "Sign In" : "Sign Up"}
         </h1>
         {!isSignForm && (< input
@@ -122,7 +122,7 @@ const {uid,email,displayName,photoURL}=auth.currentUser;
           {isSignForm ? "Sign In" : "Sign Up"}
         </button>
         <p
-          className="py-4 my-4 font-bold hover:cursor-pointer"
+          className="py-4 my-4 font-bold hover:cursor-pointer border-[0.5px] px-2"
           onClick={toggleSignInForm}
         >
           {isSignForm
