@@ -9,7 +9,7 @@ import { addUser } from "../utils/userSlice";
 import { USER_ICON } from "../utils/constants";
 import { BG_URL } from "../utils/constants";
 const Login = () => {
-  const [isSignForm, setIsSignInForm] = useState(false);
+  const [isSignForm, setIsSignInForm] = useState(true);
   const [errorMessage,setErrorMessage]=useState(null);
   const email=useRef(null);
   const password=useRef(null);

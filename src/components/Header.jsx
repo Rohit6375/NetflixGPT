@@ -90,7 +90,6 @@ const Header = () => {
             className="font-bold cursor-pointer text-white p-2"
           >
             {user.displayName}
-            <p className="font-normal">(logout)</p>
           </button>
         </div>
       )}
