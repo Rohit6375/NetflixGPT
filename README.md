@@ -51,7 +51,10 @@ If you are developing a production application, we recommend using TypeScript wi
 - GPT Search Page
 - GPT Search Bar
 - (Bonus) Multi-language Feature in our app
-- 
+- making our app responsive
+- did Memoization
+- made our page responsive
+
 
 # FEATURES
 - Login/Sign up
