@@ -1,17 +1,13 @@
-import React from 'react'
-import { IMG_CDN_URL } from '../utils/constants'
-const MovieCard = ({posterPath}) => {
-  
+import React from 'react';
+
+const MovieCard = ({ posterPath, movie, onMovieClick }) => {
+  if (!posterPath) return null;
+
   return (
-    <div className="pr-4 flex-shrink-0">
-      <img
-        src={IMG_CDN_URL + posterPath}
-        alt="Movie card"
-        className="w-48 h-auto object-cover"
-      />
+    <div className="w-44 p-2 cursor-pointer hover:scale-110 rounded-lg transition-all duration-500" onClick={() => onMovieClick(movie)}>
+      <img className="w-full" src={"https://image.tmdb.org/t/p/w300" + posterPath} alt="Movie Poster" />
     </div>
   );
 };
 
-
-export default MovieCard
+export default MovieCard;

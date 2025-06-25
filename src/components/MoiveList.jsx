@@ -1,22 +1,24 @@
-import React from 'react'
+import React from 'react';
 import MovieCard from './MovieCard';
+import "../App.css";
 
-const MoiveList = ({title,movies}) => {
-  // console.log(movies);
- if(!Array.isArray(movies) || movies.length===0){
-  return <div>no movies present</div>;
- }
+const MoiveList = ({ title, movies, onMovieClick }) => {
+  if (!Array.isArray(movies) || movies.length === 0) {
+    return <div className="text-white px-6">No movies present</div>;
+  }
+
   return (
-    <div className='px-6  text-white'>
-      <h1 className='text-3xl py-3'>{title}</h1>
-     <div className='flex overflow-x-scroll'>
-        <div className='flex'>
-        {movies.map((movie)=><MovieCard key={movie.id} posterPath={movie.poster_path} /> )}
+    <div className="px-6 text-white">
+      <h1 className="text-3xl py-3">{title}</h1>
+      <div className="flex overflow-x-scroll hide-scrollbar">
+        <div className="flex">
+          {movies.map((movie) => (
+            <MovieCard key={movie.id} posterPath={movie.poster_path} movie={movie} onMovieClick={onMovieClick} />
+          ))}
+        </div>
       </div>
-      </div>
-     
     </div>
-  )
-}
+  );
+};
 
-export default MoiveList
+export default MoiveList;
