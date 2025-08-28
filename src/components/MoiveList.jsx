@@ -8,7 +8,7 @@ const MoiveList = ({ title, movies, onMovieClick }) => {
   }
 
   return (
-    <div className="px-6 text-white">
+    <div className="px-2 text-white">
       <h1 className="text-lg md:text-3xl py-3">{title}</h1>
       <div className="flex overflow-x-scroll hide-scrollbar">
         <div className="flex">

@@ -6,6 +6,7 @@ import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 
 import { useDispatch } from 'react-redux';
 import { addUser, removeUser } from '../utils/userSlice';
+import Error from './Error';
 const Body = () => {
 
   const dispatch=useDispatch()
@@ -19,7 +20,9 @@ const Body = () => {
         {
             path: "/browse",
             element:<Browse/>
-        }
+        },
+      
+     
     ]);
 
    
